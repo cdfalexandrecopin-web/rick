@@ -3,39 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document important</title>
+  <title>Document sécurisé</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+      background: #f2f2f7;
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .box {
+    .card {
       background: white;
-      padding: 30px;
-      border-radius: 10px;
+      padding: 28px;
+      border-radius: 12px;
       text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
     button {
-      padding: 12px 25px;
+      margin-top: 15px;
+      padding: 12px 22px;
       font-size: 16px;
-      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background: #007aff;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Accéder au document</h1>
-    <p>Clique pour continuer</p>
-    <button onclick="rickroll()">Ouvrir</button>
+  <div class="card">
+    <h2>Accéder au document</h2>
+    <p>Une vérification est requise</p>
+    <button onclick="go()">Continuer</button>
   </div>
 
   <script>
-    function rickroll() {
+    function go() {
       window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     }
   </script>
