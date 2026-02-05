@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document important</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Accéder au document</h1>
+    <p>Clique pour continuer</p>
+    <button onclick="rickroll()">Ouvrir</button>
+  </div>
+
+  <script>
+    function rickroll() {
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    }
+  </script>
+</body>
+</html>
